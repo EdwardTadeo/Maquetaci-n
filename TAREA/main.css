@@ -1,0 +1,105 @@
+#rectangulo1 {
+  -webkit-transition: all ease 2s;
+  transition: all ease 2s;
+}
+#rectangulo1:hover {
+  background: #cf04f7;
+  left: 350px;
+  top: 920px;
+  width: 210px;
+  height: 210px;
+  -webkit-box-shadow: 10px 10px 0px 3px rgba(0, 0, 0, 0.818);
+          box-shadow: 10px 10px 0px 3px rgba(0, 0, 0, 0.818);
+}
+
+#rectangulo2 {
+  -webkit-transition: all ease 2s;
+  transition: all ease 2s;
+}
+#rectangulo2:hover {
+  background: #0569f7;
+  left: 580px;
+  top: 920px;
+  width: 210px;
+  height: 210px;
+  -webkit-box-shadow: 10px 10px 0px 3px rgba(0, 0, 0, 0.818);
+          box-shadow: 10px 10px 0px 3px rgba(0, 0, 0, 0.818);
+}
+
+#rectangulo3 {
+  -webkit-transition: all ease 2s;
+  transition: all ease 2s;
+}
+#rectangulo3:hover {
+  background: #04f7b6;
+  left: 820px;
+  top: 920px;
+  width: 210px;
+  height: 210px;
+  -webkit-box-shadow: 10px 10px 0px 3px rgba(0, 0, 0, 0.818);
+          box-shadow: 10px 10px 0px 3px rgba(0, 0, 0, 0.818);
+}
+
+#rectangulo4 {
+  -webkit-transition: all ease 2s;
+  transition: all ease 2s;
+}
+#rectangulo4:hover {
+  background: #04f6a9;
+  left: 350px;
+  top: 1140px;
+  width: 210px;
+  height: 210px;
+  -webkit-box-shadow: 10px 10px 0px 3px rgba(0, 0, 0, 0.818);
+          box-shadow: 10px 10px 0px 3px rgba(0, 0, 0, 0.818);
+}
+
+#rectangulo5 {
+  -webkit-transition: all ease 2s;
+  transition: all ease 2s;
+}
+#rectangulo5:hover {
+  background: #04b7f3;
+  left: 580px;
+  top: 1140px;
+  width: 210px;
+  height: 210px;
+  -webkit-box-shadow: 10px 10px 0px 3px rgba(0, 0, 0, 0.818);
+          box-shadow: 10px 10px 0px 3px rgba(0, 0, 0, 0.818);
+}
+
+#rectangulo6 {
+  -webkit-transition: all ease 2s;
+  transition: all ease 2s;
+}
+#rectangulo6:hover {
+  background: #ea05f6;
+  left: 820px;
+  top: 1140px;
+  width: 210px;
+  height: 210px;
+  -webkit-box-shadow: 10px 10px 0px 3px rgba(0, 0, 0, 0.818);
+          box-shadow: 10px 10px 0px 3px rgba(0, 0, 0, 0.818);
+}
+
+#esfera1, #esfera2, #esfera3 {
+  -webkit-transition: all ease 0s;
+  transition: all ease 0s;
+}
+#esfera1:hover, #esfera2:hover, #esfera3:hover {
+  background: #ea05f6;
+  -webkit-box-shadow: -4px 4px 0px 0px rgba(0, 0, 0, 0.818);
+          box-shadow: -4px 4px 0px 0px rgba(0, 0, 0, 0.818);
+}
+
+#cuadro-negro {
+  -webkit-transition: all ease 2s;
+  transition: all ease 2s;
+}
+#cuadro-negro:hover {
+  transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}

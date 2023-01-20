@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h, initial-scale=1.0">
+    <title>Google</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        h1{
+            color: red;
+            background-color: green;
+        }
+        #wuquita{
+            background-color: palevioletred;
+            padding:25px 10px 0px 40px;
+            margin: 40px auto;
+            width: 500px;
+            height: 200px;
+            border-radius: 10px;
+            box-shadow: 10px 10px 5px 2px black;
+        }
+
+        .titulo-color{
+            background-color: yellow;
+        }
+        .container > h1{
+            background-color: brown;
+        }
+        .container:hover{
+            background-color: blueviolet;
+        }
+        .container{
+            position: relative;
+        }
+        .container::after{
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Reporte del clima del dia lunes</h1>
+    <h1 id="wuquita">Reporte del clima del dia lunes</h1>
+
+    <button>
+        Enviar
+    </button>
+    
+    <div class="container" >
+        <h1 class="titulo-color">Reporte del clima del dia lunes</h1>
+        <div>
+        <h1 class="titulo-color">Reporte del clima del dia lunes</h1>
+        <h1 class="titulo-color">Reporte del clima del dia lunes</h1>
+    </div>
+    </div>
+
+    <p>
+        Reporte del clima del dia lunes
+    </p>
+
+    <img src="https://pps.whatsapp.net/v/t61.24694-24/321186222_119340790856502_3708547257441055627_n.jpg?ccb=11-4&oh=01_AdTi1dgYrmQc3xOYsfx99iYJX-rb2QKgI3fsvgAheVQUfg&oe=63C1D8A4" alt="perrita">
+</body>
+</html>

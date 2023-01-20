@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+    <style>
+    *{
+    box-sizing: border-box;
+
+        }
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+        }
+         #primer-cuadro{
+            background: linear-gradient(to bottom, purple, skyblue);
+            position: absolute;
+            padding:25px;
+            width: 380px;
+            height: 392px;
+            left: 360px;
+            top: 40px;
+            flex: 1;
+            min-width: 300px;
+            border-radius: 0px 16px 16px 0px;
+            
+        }
+        #primer-texto{
+            margin-top: 70px ;
+            width: 48px;
+            height: 24px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 200;
+            font-size: 20px;
+            line-height: 18px;
+            color: #FFFFFF;
+        }
+        #segundo-texto{
+            width: 216px;
+            height: 48px;
+            left:   700px;
+            top: 142px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 100;
+            font-size: 20px;
+            line-height: 48px;
+
+            color: #FFFFFF;
+        }
+        .foto1{
+            position: absolute;
+            width: 377px;
+            height: 392px;
+            left: 720px;
+            top: 40px;
+           z-index: -20;
+        }
+        #tercer-texto{
+            width: 200px;
+            height: 24px;
+            left: 397px;
+            top: 110px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 10px;
+            line-height: 20px;
+
+            color: #FFFFFF;
+
+        }
+        #boton{
+            margin: 100px 0px 0px 0px;
+            width: 74px;
+            height: 28px;
+
+
+            background: #FFFFFF;
+            border-radius: 8px;
+        }
+        #about-me{
+            position: absolute;
+            width: 191px;
+            height: 48px;
+            left: 10px;
+            top: 450px;
+            margin: 20px 0px 0px 750px;
+            flex: 2;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 48px;
+
+            color: #000000;
+        }
+        #cuadro-negro{
+            position: absolute;
+            width: 230px;
+            height: 230px;
+            left: 450px;
+            top: 455px;
+
+            background: #000000;
+            border-radius: 18px;
+        }
+        #cuadro-rosa{
+            position: absolute;
+            width: 159px;
+            height: 173px;
+            left: 361px;
+            top: 530px;
+
+            background: #D934DC;
+            border-radius: 0px 18px 18px 0px;
+            z-index: -10;
+        }
+        #descrip{
+            position: absolute;
+            width: 230px;
+            height: 48px;
+            left: 760px;
+            top: 539px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 10px;
+            line-height: 16px;
+            /* or 160% */
+
+
+            color: #000000;
+        }
+        #esfera1{
+            position: absolute;
+            width: 26px;
+            height: 26px;
+            left: 770px;
+            top: 646px;
+            background: #29E3F4;
+            border-radius: 18px;
+        }
+        #esfera2{
+            position: absolute;
+            width: 26px;
+            height: 26px;
+            left: 800px;
+            top: 646px;
+
+            background: #29E3F4;
+            border-radius: 18px;
+        }
+        #esfera3{
+            position: absolute;
+            width: 26px;
+            height: 26px;
+            left: 830px;
+            top: 646px;
+
+            background: #29E3F4;
+            border-radius: 18px;
+        }
+        #services{
+            position: absolute;
+            width: 172px;
+            height: 48px;
+            left: 390px;
+            top: 760px;
+            border-color: black;
+
+        }
+        #services-descrip{
+            position: absolute;
+            width: 230px;
+            height: 48px;
+            top: 500px;
+            margin: 330px 0px 0px 390px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 10px;
+            line-height: 16px;
+            /* or 160% */
+            color: #000000;
+        }
+        #rectangulo1{
+            position: absolute;
+            width: 196px;
+            height: 196px;
+            left: 390px;
+            top: 940px;
+
+            background: #DE89EF;
+            border-radius: 18px;
+        }
+        #rectangulo2{
+            position: absolute;
+            width: 196px;
+            height: 196px;
+            left: 630px;
+            top: 940px;
+
+            background: #72A5EC;
+            border-radius: 18px;
+        }
+        #rectangulo3{
+            position: absolute;
+            width: 196px;
+            height: 196px;
+            left: 870px;
+            top: 940px;
+
+            background: #79E6C9;
+            border-radius: 18px;
+        }
+        #rectangulo4{
+            position: absolute;
+            width: 196px;
+            height: 196px;
+            left: 390px;
+            top: 1160px;
+
+            background: #76D0B3;
+            border-radius: 18px;
+        }
+        #rectangulo5{
+            position: absolute;
+            width: 196px;
+            height: 196px;
+            left: 630px;
+            top: 1160px;
+            background: #80CAE3;
+            border-radius: 18px;
+        }
+        #rectangulo6{
+            position: absolute;
+            width: 196px;
+            height: 196px;
+            left: 870px;
+            top: 1160px;
+
+            background: #E485E9;
+            border-radius: 18px;
+        }
+        .titulo-rectangulo{
+            position: absolute;
+            width: 93px;
+            height: 58px;
+            left: 29px;
+            top: 90px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 29px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+        .titulos-2{
+            position: absolute;
+            width: 236px;
+            height: 48px;
+            left: 0px;
+            top: 0px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 48px;
+
+            color: #000000;
+
+        }
+        #lastest-work{
+            position: absolute;
+            width: 236px;
+            height: 48px;
+            left: 390px;
+            top: 1400px;
+        }
+        #lastest-descrip{
+            position: absolute;
+            width: 230px;
+            height: 48px;
+            top: 880px;
+            margin: 600px 0px 0px 390px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 10px;
+            line-height: 16px;
+            /* or 160% */
+            color: #000000;
+        }
+        #rectangulo7{
+            position: absolute;
+            width: 196px;
+            height: 196px;
+            left: 390px;
+            top: 1600px;
+            background: #CFD4D7;
+            border-radius: 18px;
+        }
+        #rectangulo8{
+            position: absolute;
+            width: 196px;
+            height: 196px;
+            left: 630px;
+            top: 1600px;
+            background: #786D69;
+            border-radius: 18px;
+        }
+        #rectangulo9{
+            position: absolute;
+            width: 196px;
+            height: 196px;
+            left: 870px;
+            top: 1600px;
+            background: #488E9D;
+            border-radius: 18px;
+        }
+        #experiencie{
+            position: absolute;
+            width: 236px;
+            height: 48px;
+            left: 390px;
+            top: 1850px;
+        }
+        #experiencie-descrip{
+            position: absolute;
+            width: 230px;
+            height: 48px;
+            top: 1550px;
+            margin: 400px 0px 0px 390px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 10px;
+            line-height: 16px;
+            /* or 160% */
+            color: #000000;
+        }
+        #rectangulo10{
+            box-sizing: border-box;
+
+            position: absolute;
+            width: 196px;
+            height: 196px;
+            left: 390px;
+            top: 2050px;
+
+            background: #FFFFFF;
+            border: 4px solid #02C1F2;
+            border-radius: 18px;
+        }
+        #rectangulo11{
+            position: absolute;
+            width: 196px;
+            height: 196px;
+            left: 630px;
+            top: 2050px;
+
+            background: #00C1F2;
+            border-radius: 18px;
+        }
+        #rectangulo12{
+            box-sizing: border-box;
+
+            position: absolute;
+            width: 196px;
+            height: 196px;
+            left: 870px;
+            top: 2050px;
+
+            background: #FFFFFF;
+            border: 4px solid #02C1F2;
+            border-radius: 18px;
+        }
+        .texto1-experiencie{
+            position: absolute;
+            width: 151px;
+            height: 16px;
+            left: 18px;
+            top: 500px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 10px;
+            line-height: 16px;
+            /* identical to box height, or 160% */
+
+
+            color: #000000;
+        }
+        .texto2-experiencie{
+            position: absolute;
+            width: 150px;
+            height: 24px;
+            left: 18px;
+            top: 515px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 24px;
+
+            color: rgba(0, 0, 0, 0.8);
+        }
+        .texto3-experiencie{
+            position: absolute;
+            width: 151px;
+            height: 64px;
+            left: 18px;
+            top: 555px;
+
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 10px;
+            line-height: 16px;
+            /* or 160% */
+            color: #000000;
+        }
+        #fondo{
+            position: absolute;
+            width: 740px;
+            height: 2234px;
+            left: 358px;
+            top: 0px;
+            flex: 2;
+            min-width: 300px;
+            background: #FFFFFF;
+            box-shadow: 10px 10px 20px 2px rgba(0, 0, 0, 0.25);
+            z-index: -20;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div id="primer-cuadro" class=".in-flex">
+        <div id="primer-texto">
+            <h2 id="primer">Hello</h2>
+        </div>
+        <div id="segundo-texto">
+            <h1 id="primer">I'am Kattie</h1>
+        </div>
+        <div id="tercer-texto">
+            <h3 id="primer">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</h3>
+        </div>
+        <div id="boton">
+            
+        </div>
+        
+    </div>
+    <div id="cuadro2">
+        <div id="about-me">
+            <h1>About Me</h1>
+        </div>
+        <div id="cuadro-negro">
+
+        </div>
+        <div id="cuadro-rosa">
+
+        </div>
+        <div id="descrip">
+            <h3>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</h3>
+        </div>
+        <div id="esfera1">
+
+        </div>
+        <div id="esfera2">
+
+        </div>
+        <div id="esfera3">
+
+        </div>
+    </div>
+    <div>
+        <div id="services">
+            <h1 class="titulos-2">Services</h1>
+        </div>
+        <div id="services-descrip">
+            <h3>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</h3>
+        </div>
+        <div id="rectangulo1">
+            <h2 class="titulo-rectangulo">Graphic Design</h2>
+        </div>
+        <div id="rectangulo2">
+            <h2 class="titulo-rectangulo">Graphic Design</h2>
+        </div>
+        <div id="rectangulo3">
+            <h2 class="titulo-rectangulo">Graphic Design</h2>
+        </div>
+        <div id="rectangulo4">
+            <h2 class="titulo-rectangulo">Graphic Design</h2>
+        </div>
+        <div id="rectangulo5">
+            <h2 class="titulo-rectangulo">Graphic Design</h2>
+        </div>
+        <div id="rectangulo6">
+            <h2 class="titulo-rectangulo">Graphic Design</h2>
+        </div>
+    </div>
+    <div>
+        <div id="lastest-work">
+            <h1 class="titulos-2">Latest Work</h1>
+        </div>
+        <div id="lastest-descrip">
+            <h3>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</h3>
+        </div>
+        <div id="rectangulo10">
+
+        </div>
+        <div id="rectangulo11">
+
+        </div>
+        <div id="rectangulo12">
+
+        </div>
+    </div>
+    <div>
+        <div id="experiencie"> 
+            <h1 class="titulos-2">Experiencie</h1>
+        </div>
+        <div id="experiencie-descrip">
+            <h3>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</h3>
+        </div>
+        <div id="rectangulo7">
+            <h3 class="texto1-experiencie">It is a long</h3>
+            <h2 class="texto2-experiencie">Graphic Design</h2>
+            <h3 class="texto3-experiencie">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</h3>
+        </div>
+        <div id="rectangulo8">
+            <h3 class="texto1-experiencie" style="color: rgba(255, 255, 255, 0.8);">It is a long</h3>
+            <h2 class="texto2-experiencie" style="color: rgba(255, 255, 255, 0.8);">Graphic Design</h2>
+            <h3 class="texto3-experiencie" style="color: rgba(255, 255, 255, 0.8);">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</h3>
+        </div>
+        <div id="rectangulo9">
+            <h3 class="texto1-experiencie">It is a long</h3>
+            <h2 class="texto2-experiencie">Graphic Design</h2>
+            <h3 class="texto3-experiencie">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</h3>
+        </div>
+    </div>
+    <div id="fondo" class=".in-flex">
+
+    </div>
+
+    <img class="foto1" src="https://cloudfront-us-east-1.images.arcpublishing.com/infobae/OQ5TYLXIVVEJBAVFACBMYQ77JY.jpg" alt="women">
+</div>
+
+
+</body>
+</html>
